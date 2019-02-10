@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flex Align</title>
+  <style>
+    #container {
+      background: #555;
+      display: flex;
+      flex-wrap: wrap;
+      /* Align Items Horizontal */
+      justify-content: space-evenly;
+      /* 
+        Options: 
+          flex-start
+          flex-end
+          center
+          space-around
+          space-between
+          space-evenly 
+      */
+      height: 600px;
+      /* Align Items Vertical (must be a height) */
+      align-items: flex-start;
+      /* 
+        Options:
+          flex-start
+          flex-end
+          center
+          baseline
+          stretch
+       */
+      /* Align Items Vertical Where There Is Extra Space */
+       align-content: flex-start;
+       /* 
+        Options:
+          flex-start
+          flex-end
+          center
+          space-between
+          space-around
+          stretch
+        */
+    }
+
+    .item-1 {
+      order: 3;
+    }
+
+    .item-2 {
+      /* Align Single Item Vertical */
+      align-self: flex-end;
+      /* 
+        Options: 
+          flex-start
+          flex-end
+          center
+          baseline
+          stretch
+       */
+       order: 2;
+    }
+
+    .item-3 {
+      order: 1;
+    }
+
+    .item {
+      background: #f4f4f4;
+      border: #ccc solid 1px;
+      text-align: center;
+      padding: 1rem;
+      margin: 0.5rem;
+      flex-basis: 200px;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="item item-1"><h3>Item 1</h3></div>
+    <div class="item item-2"><h3>Item 2</h3></div>
+    <div class="item item-3"><h3>Item 3</h3></div>
+  
+  </div>
+</body>
+</html>

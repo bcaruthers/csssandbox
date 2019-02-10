@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vh & Vw Units</title>
+
+  <style>
+    /* Vh has 100 slices and is used for the height; 100vh = covers 100% */
+    /* Vw has 100 slices and is used for width; 50vw = half the screen vw| */
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  header {
+    background: #333 url('https://source.unsplash.com/daily') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    text-align: center;
+    padding: 2rem;
+    padding-top: 15rem;
+  }
+
+  header h1 {
+    font-size: 3rem;
+  }
+
+  header p {
+    margin: 1rem 0;
+  }
+
+  .btn {
+    display: inline-block;
+    text-decoration: none;
+    background: #f4f4f4;
+    color: #333;
+    padding: 0.75rem 2rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+
+  @media(max-height: 450px) {
+    header {
+      padding-top: 5rem;
+    }
+  }
+
+  </style>
+
+</head>
+<body>
+  <header>
+    <h1>Welcome To Our Website</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi labore sequi, qui recusandae consequuntur tenetur?</p>
+    <a href="#" class="btn">Find Out More</a>
+  </header>
+
+  <section>
+    <h3>About Our Company</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, aut, expedita excepturi laudantium suscipit voluptates facere perspiciatis laborum quos ipsam exercitationem molestias minus vitae voluptatibus illum, incidunt ea rerum. Labore commodi excepturi similique aliquid veritatis earum odio modi nobis laboriosam possimus nemo corrupti odit sit doloremque neque, cumque hic quisquam?</p>
+  </section>
+
+
+</body>
+</html>
